@@ -18,11 +18,15 @@ You can clone the repo locally and make sure you have the latest python version 
 ### milestone2 file
 
 - creates the basic structure of the code logic.
-
+We define a list and we use the import module to jumble up our objects in the list.
 
 ### milestone3 file
 
 - tidies the code under functions and tests user input.
+
+### milestone3 refactored file
+
+- 
 
 
 ## File Structure
@@ -32,6 +36,7 @@ You can clone the repo locally and make sure you have the latest python version 
 ├── hangman
 │   └── hangman_Template.py
 ├── milestone3.py
+├── milestone3_refactored.py
 ├── milestones_2.py
 └── README.md
 
