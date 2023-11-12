@@ -20,7 +20,11 @@ def main():
         guess = input("Enter one letter: ")
     
         if validate_one_letter_input(guess):
-            break
+            if guess in word:
+                print(f"Good guess! {guess} is in the word.")
+                break
+            else:
+                print(f"Sorry, {guess} is not in the word. Try again")
         else:
             print("Invalid letter. Please, enter a single alphabetical character.")
     
