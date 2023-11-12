@@ -13,7 +13,17 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 
 ## Instructions
 
-You can clone the repo locally and make sure you have the latest python version installed. There is a template where you can follow if you are finding difficult to progress when creating your own hangman game.
+You can clone the repo locally and make sure you have the latest python version installed. There is a template where you can follow if you are finding difficult to progress when creating your own hangman game. The repo also includes the a few milestones to break down the steps:
+
+### milestone2 file
+
+- creates the basic structure of the code logic.
+
+
+### milestone3 file
+
+- tidies the code under functions and tests user input.
+
 
 ## File Structure
 ```bash
@@ -21,7 +31,7 @@ You can clone the repo locally and make sure you have the latest python version 
 ├── fabshangman.py
 ├── hangman
 │   └── hangman_Template.py
-├── hangman.ipynb
+├── milestone3.py
 ├── milestones_2.py
 └── README.md
 
