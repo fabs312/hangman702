@@ -1,4 +1,4 @@
-import random
+# import random
 
 # # create list of fave list
 # fave_fruits = ["watermelon", "banana", "kiwi", "guava", "apple"]
@@ -17,7 +17,7 @@ import random
 
 # print(word)
 
-# Refactor code above
+# REFACTOR CODE ABOVE
 
 import random
 
