@@ -9,10 +9,20 @@ def select_a_fruit(fruit_list):
 
 def validate_one_letter_input(user_input):
     """validation for a single letter input"""
-    return len(user_input) == user_input.isalpha()
+    return len(user_input) == 1 and user_input.isalpha()
 
-# main input function 
-def main():
+def check_guess(guess, word):
+    """Checks a letter in the guessed word"""
+    guess = guess.lower() # convert guess to lower case
+    if guess in word:
+        print(f"Good guess! {guess} is in the word.")
+        return True
+    else:
+        print(f"Sorry, {guess} is not in the word. Try again")
+        return False
+
+def ask_for_input():
+    """Asks for invalid input and validates"""
     word = select_a_fruit(fave_fruits)
     
     # while loop block
@@ -20,17 +30,11 @@ def main():
         guess = input("Enter one letter: ")
     
         if validate_one_letter_input(guess):
-            if guess in word:
-                print(f"Good guess! {guess} is in the word.")
+            if check_guess(guess, word):
                 break
-            else:
-                print(f"Sorry, {guess} is not in the word. Try again")
         else:
             print("Invalid letter. Please, enter a single alphabetical character.")
-    
-    return word
  
- # intialise function
+ # intialise game
 if __name__ == "__main__":
-    word_selected = main()
-    print("The randomly selectd word is:", word_selected)
+    ask_for_input()
